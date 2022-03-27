@@ -10,6 +10,7 @@ import {
 } from "./layout.module.css";
 
 const Layout = ({ pageTitle, children }) => {
+  // To pull data into a “building block” component, use the useStaticQuery hook.
   const data = useStaticQuery(graphql`
     query {
       site {
