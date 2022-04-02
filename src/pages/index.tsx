@@ -18,6 +18,11 @@ type IndexPageProps = {
         gatsbyImageData: IGatsbyImageData
       }
     }
+    file: {
+      childImageSharp: {
+        gatsbyImageData: IGatsbyImageData
+      }
+    }
   }
 }
 
