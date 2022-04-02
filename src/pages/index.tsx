@@ -4,19 +4,15 @@ import GlobalStyle from 'components/common/global-style'
 import Introduction from 'components/main/introduction'
 import Footer from 'components/common/footer'
 import CategoryList from 'components/main/category-list'
-import PostList, { PostType } from 'components/main/post-list'
+import PostList from 'components/main/post-list'
+import { PostListItemType } from 'types/post-item.types'
 import { graphql } from 'gatsby'
 import { IGatsbyImageData } from 'gatsby-plugin-image'
 
 type IndexPageProps = {
   data: {
     allMarkdownRemark: {
-      edges: PostType[]
-    }
-    file: {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData
-      }
+      edges: PostListItemType[]
     }
     file: {
       childImageSharp: {
