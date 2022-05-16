@@ -32,5 +32,17 @@ module.exports = {
       },
     },
     // End of MDX config
+    // this instance of gatsby source filesystem is for images
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/images`,
+      },
+    },
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
   ],
+  // End of image config
 };
